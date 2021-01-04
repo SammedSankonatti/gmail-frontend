@@ -37,6 +37,7 @@
     width: 100%;
     background: transparent;
     font-size: medium;
+    outline: none;
 }
 
 .header__right{
