@@ -60,7 +60,7 @@ function EmailList() {
                 <EmailRow
                     title="Developer"
                     subject="About the gmail clone"
-                    description="This clone is amazing"
+                    description="This clone is amazing , i am working on this clone since today 3 pm "
                     time="3:00 AM"
 
                 />
