@@ -62,8 +62,97 @@ function EmailList() {
                     subject="About the gmail clone"
                     description="This clone is amazing , i am working on this clone since today 3 pm "
                     time="3:00 AM"
-
                 />
+
+                <EmailRow
+                    title="MoneyView"
+                    subject="Stock market is Open"
+                    description="start investing before close at 3.30 "
+                    time="9:15 AM"
+                />
+                 <EmailRow
+                    title="Github"
+                    subject="3rd party authentication"
+                    description="please  review your github if not "
+                    time="10:00 AM"
+                />
+
+                <EmailRow
+                    title="Drive"
+                    subject="sammed requested access"
+                    description="request for the access to your drive "
+                    time="10:30 AM"
+                />
+
+                 <EmailRow
+                    title="Dev community"
+                    subject="Welcome to Dev.to!"
+                    description="dev community welcomes you "
+                    time="10:31 AM"
+                />
+
+                <EmailRow
+                    title="Github"
+                    subject="3rd party authentication"
+                    description="please  review your github if not "
+                    time="10:35 AM"
+                />
+
+                <EmailRow
+                    title="Drive"
+                    subject="pillu requested access"
+                    description="request for the access to your drive "
+                    time="10:38 AM"
+                />
+
+                <EmailRow
+                    title="Developer"
+                    subject="About the gmail clone"
+                    description="This clone is amazing , i am working on this clone since today 3 pm "
+                    time="3:00 AM"
+                />
+
+                <EmailRow
+                    title="MoneyView"
+                    subject="Stock market is Open"
+                    description="start investing before close at 3.30 "
+                    time="9:15 AM"
+                />
+                 <EmailRow
+                    title="Github"
+                    subject="3rd party authentication"
+                    description="please  review your github if not "
+                    time="10:00 AM"
+                />
+
+                <EmailRow
+                    title="Drive"
+                    subject="sammed requested access"
+                    description="request for the access to your drive "
+                    time="10:30 AM"
+                />
+
+                 <EmailRow
+                    title="Dev community"
+                    subject="Welcome to Dev.to!"
+                    description="dev community welcomes you "
+                    time="10:31 AM"
+                />
+
+                <EmailRow
+                    title="Github"
+                    subject="3rd party authentication"
+                    description="please  review your github if not "
+                    time="10:35 AM"
+                />
+
+                <EmailRow
+                    title="Drive"
+                    subject="pillu requested access"
+                    description="request for the access to your drive "
+                    time="10:38 AM"
+                />
+
             </div>
 
         </div>
