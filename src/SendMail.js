@@ -29,7 +29,7 @@ function SendMail() {
                   <input  name="message" className="sendMail__message" placeholder="Message ..." type="text"  ref={register({required:true})} />
 
                   <div className="sendMail__options">
-                      <Button className="sendMail__send" >Send</Button>
+                      <button className="sendMail__send" >Send</button>
                   </div>
             </form>
         </div>
