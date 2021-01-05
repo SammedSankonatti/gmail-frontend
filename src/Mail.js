@@ -67,10 +67,12 @@ function Mail() {
                     <h2> Subject</h2>
                     <LabelImportantIcon className="mail__importantIcon" />
                     <p> Title </p>
-                    <p>Time</p>
+                    <p className="mail__time" >7:30 PM</p>
                 </div>
-                <div>
-                    
+                <div className="mail__message">
+                    <h3> This Gmail build just giving me very much confidance
+                         This Gmail build just giving me very much confidance 
+                         This Gmail build just giving me very much confidance  </h3>
                 </div>
             </div>
 

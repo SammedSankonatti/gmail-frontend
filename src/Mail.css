@@ -13,6 +13,51 @@
     display: flex;
 }
 
-/* .mail__toolsRight{
+.mail__toolsRight{
     display: flex;
+}
+
+.mail__body{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: #fff;
+    padding: 20px;
+    /* height: 100vh; */
+    height: auto;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+}
+
+.mail__bodyHeader{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(182, 178, 178);
+    padding: 20px;
+    position: relative;
+}
+
+.mail__bodyHeader >h2{
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+.mail__importantIcon{
+    padding-top: 6px;
+    color: #e8ab02 !important;
+}
+
+.mail__bodyHeader >p{
+    margin-left: 20px;
+}
+
+/* .mail__time{
+    position: absolute;
+    top: 24px;
+    right: 0;
 } */
+
+.mail__message{
+    padding: 10px;
+    margin-left: 20px;
+    overflow-wrap: break-word;
+}
