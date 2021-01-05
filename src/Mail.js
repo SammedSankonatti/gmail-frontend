@@ -70,9 +70,9 @@ function Mail() {
                     <p className="mail__time" >7:30 PM</p>
                 </div>
                 <div className="mail__message">
-                    <h3> This Gmail build just giving me very much confidance
+                    <p> This Gmail build just giving me very much confidance
                          This Gmail build just giving me very much confidance 
-                         This Gmail build just giving me very much confidance  </h3>
+                         This Gmail build just giving me very much confidance  </p>
                 </div>
             </div>
 

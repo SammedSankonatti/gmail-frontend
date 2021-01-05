@@ -56,7 +56,7 @@
     right: 0;
 }
 
-.mail__message{
+.mail__message >p{
     padding: 10px;
     margin-left: 20px;
     overflow-wrap: break-word;
