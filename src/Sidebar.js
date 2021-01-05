@@ -14,11 +14,16 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import PersonIcon from '@material-ui/icons/Person';
 import DuoIcon from '@material-ui/icons/Duo';
 import PhoneIcon from '@material-ui/icons/Phone';
+import {useDispatch} from 'react-redux';
+import { openSendMessage } from './features/mailSlice';
 
 function Sidebar() {
+
+    const dispatch= useDispatch();
+
     return (
         <div className="sidebar">
-            <Button startIcon={<AddIcon fontSize="large" />} className="sidebar__compose" > Compose </Button>
+            <Button startIcon={<AddIcon fontSize="large" />} className="sidebar__compose" onClick={()=>dispatch(openSendMessage())} > Compose </Button>
             <SidebarOption Icon={ InboxIcon} title="Inbox" number={18} selected={true} />
             <SidebarOption Icon={ StarIcon} title="Starred" number={17} />
             <SidebarOption Icon={ WatchLaterSharpIcon} title="Snoozed" number={7} />
