@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './EmailList.css';
 
 import {Checkbox, IconButton} from '@material-ui/core';
@@ -16,8 +16,27 @@ import PeopleIcon from '@material-ui/icons/People';
 import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 
 import EmailRow from './EmailRow';
+import { db } from './firebase';
 
 function EmailList() {
+
+    const [emails, setEmails]= useState([]);
+
+    useEffect(()=>{
+        db.collection("emails")
+        .orderBy('timestamp',"desc")
+        .onSnapshot((snapshot)=>
+        setEmails(
+            snapshot.docs.map((doc)=>({
+                id:doc.id,
+                data:doc.data(),
+            }))
+        ),
+        console.log(emails)
+        );
+    }, []);
+        
+
     return (
         <div className="emailList">
             <div className="emailList__settings">
@@ -57,6 +76,17 @@ function EmailList() {
             </div>
 
             <div className="emailList__list">
+                {emails.map(({id, data:{to, subject, message, timestamp}}) =>{
+                    <EmailRow 
+                        id={id}
+                        key={id}
+                        title={to}
+                        subject={subject}
+                        description={message}
+                        time={ new Date(timestamp?.seconds*1000).toUTCString() }
+                    
+                    />
+                })}
                 <EmailRow
                     title="Developer"
                     subject="About the gmail clone"
@@ -64,94 +94,7 @@ function EmailList() {
                     time="3:00 AM"
                 />
 
-                <EmailRow
-                    title="MoneyView"
-                    subject="Stock market is Open"
-                    description="start investing before close at 3.30 "
-                    time="9:15 AM"
-                />
-                 <EmailRow
-                    title="Github"
-                    subject="3rd party authentication"
-                    description="please  review your github if not "
-                    time="10:00 AM"
-                />
-
-                <EmailRow
-                    title="Drive"
-                    subject="sammed requested access"
-                    description="request for the access to your drive "
-                    time="10:30 AM"
-                />
-
-                 <EmailRow
-                    title="Dev community"
-                    subject="Welcome to Dev.to!"
-                    description="dev community welcomes you "
-                    time="10:31 AM"
-                />
-
-                <EmailRow
-                    title="Github"
-                    subject="3rd party authentication"
-                    description="please  review your github if not "
-                    time="10:35 AM"
-                />
-
-                <EmailRow
-                    title="Drive"
-                    subject="pillu requested access"
-                    description="request for the access to your drive "
-                    time="10:38 AM"
-                />
-
-                <EmailRow
-                    title="Developer"
-                    subject="About the gmail clone"
-                    description="This clone is amazing , i am working on this clone since today 3 pm "
-                    time="3:00 AM"
-                />
-
-                <EmailRow
-                    title="MoneyView"
-                    subject="Stock market is Open"
-                    description="start investing before close at 3.30 "
-                    time="9:15 AM"
-                />
-                 <EmailRow
-                    title="Github"
-                    subject="3rd party authentication"
-                    description="please  review your github if not "
-                    time="10:00 AM"
-                />
-
-                <EmailRow
-                    title="Drive"
-                    subject="sammed requested access"
-                    description="request for the access to your drive "
-                    time="10:30 AM"
-                />
-
-                 <EmailRow
-                    title="Dev community"
-                    subject="Welcome to Dev.to!"
-                    description="dev community welcomes you "
-                    time="10:31 AM"
-                />
-
-                <EmailRow
-                    title="Github"
-                    subject="3rd party authentication"
-                    description="please  review your github if not "
-                    time="10:35 AM"
-                />
-
-                <EmailRow
-                    title="Drive"
-                    subject="pillu requested access"
-                    description="request for the access to your drive "
-                    time="10:38 AM"
-                />
+               
 
             </div>
 
