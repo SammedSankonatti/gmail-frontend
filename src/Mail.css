@@ -50,11 +50,11 @@
     margin-left: 20px;
 }
 
-/* .mail__time{
+.mail__time{
     position: absolute;
     top: 24px;
     right: 0;
-} */
+}
 
 .mail__message{
     padding: 10px;
