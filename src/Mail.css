@@ -1,0 +1,18 @@
+.mail{
+    flex: 1;
+    background-color: whitesmoke;
+}
+
+.mail__tools{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.mail__toolsLeft{
+    display: flex;
+}
+
+/* .mail__toolsRight{
+    display: flex;
+} */
