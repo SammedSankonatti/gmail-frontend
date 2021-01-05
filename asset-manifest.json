@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/my-gmail/static/css/main.ba47bdc3.chunk.css",
+    "main.js": "/my-gmail/static/js/main.35c71da5.chunk.js",
+    "main.js.map": "/my-gmail/static/js/main.35c71da5.chunk.js.map",
+    "runtime-main.js": "/my-gmail/static/js/runtime-main.8717b2eb.js",
+    "runtime-main.js.map": "/my-gmail/static/js/runtime-main.8717b2eb.js.map",
+    "static/js/2.ba2b5255.chunk.js": "/my-gmail/static/js/2.ba2b5255.chunk.js",
+    "static/js/2.ba2b5255.chunk.js.map": "/my-gmail/static/js/2.ba2b5255.chunk.js.map",
+    "index.html": "/my-gmail/index.html",
+    "static/css/main.ba47bdc3.chunk.css.map": "/my-gmail/static/css/main.ba47bdc3.chunk.css.map",
+    "static/js/2.ba2b5255.chunk.js.LICENSE.txt": "/my-gmail/static/js/2.ba2b5255.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8717b2eb.js",
+    "static/js/2.ba2b5255.chunk.js",
+    "static/css/main.ba47bdc3.chunk.css",
+    "static/js/main.35c71da5.chunk.js"
+  ]
+}
