@@ -64,9 +64,9 @@ function Mail() {
 
             <div className="mail__body">
                 <div className="mail__bodyHeader">
-                    <h2> Subject</h2>
+                    <h2> Gmail Build</h2>
                     <LabelImportantIcon className="mail__importantIcon" />
-                    <p> Title </p>
+                    <p> Your Gmail clone </p>
                     <p className="mail__time" >7:30 PM</p>
                 </div>
                 <div className="mail__message">
