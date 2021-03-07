@@ -1,4 +1,4 @@
-<h2> My Gmail </br> <a href="https://sammed-sankonatti.github.io/my-gmail/" alt="live_link" > Live Link </a> </h2>
+<h2> My Gmail </br> <a href="https://sammed-sankonatti.github.io/gmail-frontend/" alt="live_link" > Live Link </a> </h2>
 
 <h3> Final Version </h3>
 <img src="src/images/final-build.png" />
